@@ -1,29 +1,26 @@
 body {
-  background-color: #fff;
-  color: #333;
+  background-color: #3B5998;
+  color: #fff;
   margin: 33px;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
-
 p, ol, ul, td {
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
-
 pre {
   background-color: #eee;
   padding: 10px;
   font-size: 11px;
 }
-
 a {
   color: #000;
 
   &:visited {
-    color: #666;
+    color: #fff;
   }
 
   &:hover {
@@ -45,24 +42,20 @@ div {
     margin-bottom: 10px;
   }
 }
-
 #notice {
   color: green;
 }
-
 .field_with_errors {
   padding: 2px;
   background-color: red;
   display: table;
 }
-
 #error_explanation {
   width: 450px;
   border: 2px solid red;
   padding: 7px 7px 0;
   margin-bottom: 20px;
   background-color: #f0f0f0;
-
   h2 {
     text-align: left;
     font-weight: bold;
@@ -72,13 +65,27 @@ div {
     background-color: #c00;
     color: #fff;
   }
-
   ul li {
     font-size: 12px;
     list-style: square;
   }
 }
-
 label {
   display: block;
+}
+.mgl-5{
+  margin-left: 20px;
+}
+.black_letter {
+  color: #262626
+}
+footer{
+  position: absolute;
+  bottom: 0;
+  justify-content: center;
+  background-color: #3B5998
+}
+.footer_text {
+  font-size: 1.5rem;
+  color: #ffffff
 }

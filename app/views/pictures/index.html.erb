@@ -8,18 +8,18 @@
       <th colspan="4"></th>
       <th>Content</th>
       <th>Uploaded_by</th>
-      <th>Image</th>
+      <th><span class="mgl-5">Image</span></th>
     </tr>
   </thead>
 
   <tbody>
-    <%= link_to 'New Picture', new_picture_path %>
+    <%= link_to 'New Picture', new_picture_path, class: 'btn btn-primary' %>
     <% @pictures.each do |picture| %>
       <tr>
         <td>●</td>
-        <td><%= link_to 'Show', picture %></td>
-        <td><%= link_to 'Edit', edit_picture_path(picture) if current_user == picture.user%></td>
-        <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' } if current_user == picture.user%></td>
+        <td><%= link_to 'Show', picture, class: 'btn btn-primary' %></td>
+        <td><%= link_to 'Edit', edit_picture_path(picture), class: 'btn btn-primary' if current_user == picture.user %></td>
+        <td><%= link_to 'Destroy', picture, method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-primary' if current_user == picture.user %></td>
         <td><%= picture.content %></td>
         <td><%= picture.user.name %></td>
         <td><%= picture.image %></td>

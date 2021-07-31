@@ -11,12 +11,12 @@
 <% end %>
 <%= form_with(model: @user, local: true) do |f| %>
 <%= f.label :name %>
-<%= f.text_field :name %>
+<%= f.text_field :name, class: "black_letter" %>
 <%= f.label :email %>
-<%= f.email_field :email %><br>
+<%= f.email_field :email, class: "black_letter" %><br>
 <%= f.label :password %>
-<%= f.password_field :password %>
+<%= f.password_field :password, class: "black_letter" %>
 <%= f.label :password_confirmation %>
-<%= f.password_field :password_confirmation %><br>
-<%= f.submit "Create my account" %>
+<%= f.password_field :password_confirmation, class: "black_letter" %><br>
+<%= f.submit "Create my account", class: "black_letter" %>
 <% end %>

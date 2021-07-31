@@ -1,6 +1,4 @@
 <h1>Editing Picture</h1>
-
 <%= render 'form', picture: @picture %>
-
-<%= link_to 'Show', @picture %> |
-<%= link_to 'Back to list', pictures_path %>
+<%= link_to 'Show', @picture, class: 'btn btn-primary' %> |
+<%= link_to 'Back to list', pictures_path, class: 'btn btn-primary' %>
