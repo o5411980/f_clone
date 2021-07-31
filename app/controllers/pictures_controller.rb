@@ -6,7 +6,14 @@ class PicturesController < ApplicationController
   def show
   end
   def new
-    @picture = Picture.new
+    if params[:back]
+      @picture = Picture.new(picture_params)
+    else
+      @picture = Picture.new
+    end
+  end
+  def confirm
+    @picture = Picture.new(picture_params)
   end
   def edit
   end
@@ -44,6 +51,7 @@ class PicturesController < ApplicationController
   private
   def set_picture
   @picture = Picture.find(params[:id])
+#  binding pry
   end
   def picture_params
   params.require(:picture).permit(:image, :content, :image_cache)
