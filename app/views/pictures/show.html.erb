@@ -1,14 +1,15 @@
 <p id="notice"><%= notice %></p>
-
 <p>
   <strong>Image:</strong>
   <%= image_tag @picture.image.url %>
 </p>
-
 <p>
   <strong>Content:</strong>
   <%= @picture.content %>
 </p>
-
-<%= link_to 'Edit', edit_picture_path(@picture) %> |
+<p>
+  <strong>Uploaded_by:</strong>
+  <%= @picture.user.name %>
+</p>
+<%= link_to 'Edit', edit_picture_path(@picture) if current_user == @picture.user %> |
 <%= link_to 'Back to list', pictures_path %>
