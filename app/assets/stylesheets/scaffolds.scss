@@ -68,24 +68,18 @@ div {
   ul li {
     font-size: 12px;
     list-style: square;
+    color: #262626;
   }
 }
 label {
   display: block;
+}
+.mgr-5{
+  margin-right: 20px;
 }
 .mgl-5{
   margin-left: 20px;
 }
 .black_letter {
   color: #262626
-}
-footer{
-  position: absolute;
-  bottom: 0;
-  justify-content: center;
-  background-color: #3B5998
-}
-.footer_text {
-  font-size: 1.5rem;
-  color: #ffffff
 }
